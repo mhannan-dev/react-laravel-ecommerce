@@ -3,48 +3,91 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Dashboard = () => {
     return (
-        <div className="container-fluid px-4">
-            <h1 className="mt-4">Dashboard</h1>
-            <ol className="breadcrumb mb-4">
-                <li className="breadcrumb-item active">Dashboard</li>
-            </ol>
-            <div className="row">
-                <div className="col-xl-3 col-md-6">
-                    <div className="card bg-primary text-white mb-4">
-                        <div className="card-body">Primary Card</div>
-                        <div className="card-footer d-flex align-items-center justify-content-between">
-                            <Link className="small text-white stretched-link" to="#">View Details</Link>
-                            <div className="small text-white"><svg className="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg><i className="fas fa-angle-right"></i> Font Awesome fontawesome.com</div>
+        <div className="content-wrapper">
+
+            <div className="content-header">
+                <div className="container-fluid">
+                    <div className="row mb-2">
+                        <div className="col-sm-6">
+                            <h1 className="m-0">Starter Page</h1>
                         </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-md-6">
-                    <div className="card bg-warning text-white mb-4">
-                        <div className="card-body">Warning Card</div>
-                        <div className="card-footer d-flex align-items-center justify-content-between">
-                            <Link className="small text-white stretched-link" to="#">View Details</Link>
-                            <div className="small text-white"><svg className="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg><i className="fas fa-angle-right"></i> Font Awesome fontawesome.com</div>
+
+                        <div className="col-sm-6">
+                            <ol className="breadcrumb float-sm-right">
+                                <li className="breadcrumb-item"><Link href="#">Home</Link></li>
+                                <li className="breadcrumb-item active">Starter Page</li>
+                            </ol>
                         </div>
+
                     </div>
+
                 </div>
-                <div className="col-xl-3 col-md-6">
-                    <div className="card bg-success text-white mb-4">
-                        <div className="card-body">Success Card</div>
-                        <div className="card-footer d-flex align-items-center justify-content-between">
-                            <Link className="small text-white stretched-link" to="#">View Details</Link>
-                            <div className="small text-white"><svg className="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg><i className="fas fa-angle-right"></i> Font Awesome fontawesome.com</div>
+
+            </div>
+
+            <div className="content">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+
+                                    <p className="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.
+                                    </p>
+
+                                    <Link href="#" className="card-link">Card link</Link>
+                                    <Link href="#" className="card-link">Another link</Link>
+                                </div>
+                            </div>
+
+                            <div className="card card-primary card-outline">
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+
+                                    <p className="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.
+                                    </p>
+                                    <Link href="#" className="card-link">Card link</Link>
+                                    <Link href="#" className="card-link">Another link</Link>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-md-6">
-                    <div className="card bg-danger text-white mb-4">
-                        <div className="card-body">Danger Card</div>
-                        <div className="card-footer d-flex align-items-center justify-content-between">
-                            <Link className="small text-white stretched-link" to="#">View Details</Link>
-                            <div className="small text-white"><svg className="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg><i className="fas fa-angle-right"></i> Font Awesome fontawesome.com</div>
+
+                        <div className="col-lg-6">
+                            <div className="card">
+                                <div className="card-header">
+                                    <h5 className="m-0">Featured</h5>
+                                </div>
+                                <div className="card-body">
+                                    <h6 className="card-title">Special title treatment</h6>
+
+                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <Link href="#" className="btn btn-primary">Go somewhere</Link>
+                                </div>
+                            </div>
+
+                            <div className="card card-primary card-outline">
+                                <div className="card-header">
+                                    <h5 className="m-0">Featured</h5>
+                                </div>
+                                <div className="card-body">
+                                    <h6 className="card-title">Special title treatment</h6>
+
+                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <Link href="#" className="btn btn-primary">Go somewhere</Link>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
         </div>
     )

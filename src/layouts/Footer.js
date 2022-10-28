@@ -2,16 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
-        <footer className="py-4 bg-light mt-auto">
-            <div className="container-fluid px-4">
-                <div className="d-flex align-items-center justify-content-between small">
-                    <div className="text-muted">Copyright © Your Website 2022</div>
-                    <div>
-                        <Link to="#">Privacy Policy</Link>
-                        <Link to="#">Terms &amp; Conditions</Link>
-                    </div>
-                </div>
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-inline">
+                Anything you want
             </div>
+            
+            <strong>Copyright © 2014-2021 <Link to="https://adminlte.io">AdminLTE.io</Link>.</strong> All rights reserved.
         </footer>
     );
 }
