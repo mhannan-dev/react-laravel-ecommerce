@@ -1,95 +1,91 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 const Dashboard = () => {
-    return (
-        <div className="content-wrapper">
-
-            <div className="content-header">
-                <div className="container-fluid">
-                    <div className="row mb-2">
-                        <div className="col-sm-6">
-                            <h1 className="m-0">Starter Page</h1>
-                        </div>
-
-                        <div className="col-sm-6">
-                            <ol className="breadcrumb float-sm-right">
-                                <li className="breadcrumb-item"><Link href="#">Home</Link></li>
-                                <li className="breadcrumb-item active">Starter Page</li>
-                            </ol>
-                        </div>
-
-                    </div>
-
-                </div>
-
+  return (
+    <div className="content-wrapper">
+      <div className="content-header">
+        <div className="container-fluid">
+          <div className="row mb-2">
+            <div className="col-sm-6">
+              <h1 className="m-0">Dashboard</h1>
             </div>
-
-            <div className="content">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-
-                                    <p className="card-text">
-                                        Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.
-                                    </p>
-
-                                    <Link href="#" className="card-link">Card link</Link>
-                                    <Link href="#" className="card-link">Another link</Link>
-                                </div>
-                            </div>
-
-                            <div className="card card-primary card-outline">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-
-                                    <p className="card-text">
-                                        Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.
-                                    </p>
-                                    <Link href="#" className="card-link">Card link</Link>
-                                    <Link href="#" className="card-link">Another link</Link>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="col-lg-6">
-                            <div className="card">
-                                <div className="card-header">
-                                    <h5 className="m-0">Featured</h5>
-                                </div>
-                                <div className="card-body">
-                                    <h6 className="card-title">Special title treatment</h6>
-
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <Link href="#" className="btn btn-primary">Go somewhere</Link>
-                                </div>
-                            </div>
-
-                            <div className="card card-primary card-outline">
-                                <div className="card-header">
-                                    <h5 className="m-0">Featured</h5>
-                                </div>
-                                <div className="card-body">
-                                    <h6 className="card-title">Special title treatment</h6>
-
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <Link href="#" className="btn btn-primary">Go somewhere</Link>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div className="col-sm-6">
+              <ol className="breadcrumb float-sm-right">
+                <li className="breadcrumb-item">
+                  <Link to="#">Home</Link>
+                </li>
+                <li className="breadcrumb-item active">Dashboard v1</li>
+              </ol>
             </div>
+          </div>
         </div>
-    )
-}
+      </div>
+
+      <section className="content">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-info">
+                <div className="inner">
+                  <h3>150</h3>
+                  <p>New Orders</p>
+                </div>
+                <div className="icon">
+                  <i className="ion ion-bag" />
+                </div>
+                <Link href="#" className="small-box-footer">
+                  More info <i className="fas fa-arrow-circle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-success">
+                <div className="inner">
+                  <h3>
+                    53<sup style={{ fontSize: "20px" }}>%</sup>
+                  </h3>
+                  <p>Bounce Rate</p>
+                </div>
+                <div className="icon">
+                  <i className="ion ion-stats-bars" />
+                </div>
+                <Link href="#" className="small-box-footer">
+                  More info <i className="fas fa-arrow-circle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-warning">
+                <div className="inner">
+                  <h3>44</h3>
+                  <p>User Registrations</p>
+                </div>
+                <div className="icon">
+                  <i className="ion ion-person-add" />
+                </div>
+                <Link href="#" className="small-box-footer">
+                  More info <i className="fas fa-arrow-circle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-danger">
+                <div className="inner">
+                  <h3>65</h3>
+                  <p>Unique Visitors</p>
+                </div>
+                <div className="icon">
+                  <i className="ion ion-pie-graph" />
+                </div>
+                <Link to="#" className="small-box-footer">
+                  More info <i className="fas fa-arrow-circle-right" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 export default Dashboard;
