@@ -38,8 +38,6 @@ const Navbar = () => {
                         </form>
                     </div>
                 </li>
-
-                
                 <li className="nav-item dropdown">
                     <Link className="nav-link" data-toggle="dropdown" to="#">
                         <i className="far fa-comments"></i>

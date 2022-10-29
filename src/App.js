@@ -1,16 +1,15 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MasterLayout from './layouts/MasterLayout';
-
 
 function App() {
   return (
     <div className="App">
       <Router>
-          <Routes>
-              <Route path="/admin/dashboard" element={<MasterLayout />} />  
-          </Routes>
+        <Switch>
+          <Route path="/admin/dashboard" render={(props) => <MasterLayout {...props} />} />
+        </Switch>
       </Router>
     </div>
   );

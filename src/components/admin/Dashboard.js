@@ -33,7 +33,7 @@ const Dashboard = () => {
                 <div className="icon">
                   <i className="ion ion-bag" />
                 </div>
-                <Link href="#" className="small-box-footer">
+                <Link to="#" className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right" />
                 </Link>
               </div>
@@ -49,7 +49,7 @@ const Dashboard = () => {
                 <div className="icon">
                   <i className="ion ion-stats-bars" />
                 </div>
-                <Link href="#" className="small-box-footer">
+                <Link to="#" className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right" />
                 </Link>
               </div>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                 <div className="icon">
                   <i className="ion ion-person-add" />
                 </div>
-                <Link href="#" className="small-box-footer">
+                <Link to="#" className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right" />
                 </Link>
               </div>
